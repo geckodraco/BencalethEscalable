@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F1F0822B-A649-4AAA-A168-7A883B45BC2C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PantallaInicio</RootNamespace>
+    <AssemblyName>PantallaInicio</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Julissa Medina\Desktop\sistema bencaleth\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>AEE6FA922C0786879CA2BAB9C809707B54DD9BD0</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>PantallaInicio_ClaveTemporal.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Sin nombre.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agregar Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agregar Usuario.Designer.cs">
+      <DependentUpon>Agregar Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alcancias.cs" />
+    <Compile Include="BencalethDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BencalethDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BencalethDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BencalethDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cambio_Contraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cambio_Contraseña.Designer.cs">
+      <DependentUpon>Cambio_Contraseña.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleados.cs" />
+    <Compile Include="EventoANotificar.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Herramientas.cs" />
+    <Compile Include="HorasVoluntarios.cs" />
+    <Compile Include="IngresarEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresarEmpresa.Designer.cs">
+      <DependentUpon>IngresarEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngresoAlcancia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresoAlcancia.Designer.cs">
+      <DependentUpon>IngresoAlcancia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngresoEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresoEmpleados.Designer.cs">
+      <DependentUpon>IngresoEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngresoNiños.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresoNiños.Designer.cs">
+      <DependentUpon>IngresoNiños.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngresoPadrinos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresoPadrinos.Designer.cs">
+      <DependentUpon>IngresoPadrinos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngresoVoluntarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresoVoluntarios.Designer.cs">
+      <DependentUpon>IngresoVoluntarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario.cs" />
+    <Compile Include="InventarioGeneral.cs" />
+    <Compile Include="Inventarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventarios.Designer.cs">
+      <DependentUpon>Inventarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventarioTerapia.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="Mantenimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.Designer.cs">
+      <DependentUpon>Mantenimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ninios.cs" />
+    <Compile Include="Notificaciones.cs" />
+    <Compile Include="Organizaciones.cs" />
+    <Compile Include="Padrinos.cs" />
+    <Compile Include="Personas.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro.Designer.cs">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista_Inventarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista_Inventarios.Designer.cs">
+      <DependentUpon>Vista_Inventarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Voluntarios.cs" />
+    <EmbeddedResource Include="Agregar Usuario.resx">
+      <DependentUpon>Agregar Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cambio_Contraseña.resx">
+      <DependentUpon>Cambio_Contraseña.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresarEmpresa.resx">
+      <DependentUpon>IngresarEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresoAlcancia.resx">
+      <DependentUpon>IngresoAlcancia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresoEmpleados.resx">
+      <DependentUpon>IngresoEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresoNiños.resx">
+      <DependentUpon>IngresoNiños.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresoPadrinos.resx">
+      <DependentUpon>IngresoPadrinos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresoVoluntarios.resx">
+      <DependentUpon>IngresoVoluntarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventarios.resx">
+      <DependentUpon>Inventarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento.resx">
+      <DependentUpon>Mantenimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Registro.resx">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista_Inventarios.resx">
+      <DependentUpon>Vista_Inventarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BencalethDataSet.xsc">
+      <DependentUpon>BencalethDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BencalethDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BencalethDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BencalethDataSet.xss">
+      <DependentUpon>BencalethDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BencalethDataSet1.xsc">
+      <DependentUpon>BencalethDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BencalethDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BencalethDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BencalethDataSet1.xss">
+      <DependentUpon>BencalethDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PantallaInicio_ClaveTemporal.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin nombre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin nombre EN BLANCO.png" />
+    <None Include="Resources\Logo Bencaleth 2.gif" />
+    <None Include="Resources\Bencaleth 21.jpg" />
+    <Content Include="Sin nombre.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
